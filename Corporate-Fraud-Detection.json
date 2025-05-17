@@ -1,0 +1,69 @@
+{
+    "project_title": "Corporate Fraud Detection Using Email Clustering",
+    "objective": "To detect potential corporate fraud patterns using unsupervised machine learning on internal email communications by clustering emails based on their content.",
+    "dataset": {
+        "file_name": "split_emails.csv",
+        "columns": {
+            "file": "Path of the original email file",
+            "message": "The text content of the email message"
+        },
+        "size": "10,000 emails"
+    },
+    "tools_used": [
+        "Python",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn",
+        "Scikit-learn",
+        "WordCloud",
+        "TF-IDF Vectorizer",
+        "KMeans Clustering"
+    ],
+    "steps": [
+        {
+            "step": 1,
+            "title": "Introduction and Objective",
+            "description": "Define the project\u2019s goal, background on Enron dataset, and fraud detection context."
+        },
+        {
+            "step": 2,
+            "title": "Data Loading and Initial Exploration",
+            "description": "Load the dataset using pandas, inspect rows and columns, and understand the structure of the email messages."
+        },
+        {
+            "step": 3,
+            "title": "Data Cleaning and Preprocessing",
+            "description": "Remove duplicates, nulls, and unnecessary columns like 'Unnamed: 0'. Create a new column for email length."
+        },
+        {
+            "step": 4,
+            "title": "Exploratory Data Analysis (EDA)",
+            "description": "Analyze distribution of email lengths, frequency of communication, and any outliers."
+        },
+        {
+            "step": 5,
+            "title": "Feature Extraction using TF-IDF",
+            "description": "Convert text emails into numerical vectors using TF-IDF to extract meaningful word patterns."
+        },
+        {
+            "step": 6,
+            "title": "Clustering with KMeans",
+            "description": "Apply KMeans clustering to group emails based on textual similarity. Add the cluster label to each email."
+        },
+        {
+            "step": 7,
+            "title": "Visualization of Clusters",
+            "description": "Use WordCloud to visualize the most frequent terms in each cluster to understand the type of communication in each group."
+        },
+        {
+            "step": 8,
+            "title": "Interpretation and Analysis",
+            "description": "Interpret the clusters and identify possible fraud-related patterns or risky communication styles."
+        },
+        {
+            "step": 9,
+            "title": "Conclusion",
+            "description": "Summarize the insights and how clustering can be a powerful unsupervised tool for internal fraud monitoring."
+        }
+    ]
+}
